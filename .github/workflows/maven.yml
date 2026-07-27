@@ -2,6 +2,10 @@ name: Java Maven CI with Coverage
 
 on: [push]
 
+# Grant permission to let the workflow commit the badge back to your repo
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,15 +25,19 @@ jobs:
       - name: Build and Test with Maven
         run: mvn clean verify
 
-      # Optional: Prints a quick coverage summary text to the GitHub logs
-      - name: Log Coverage Summary
-        run: |
-          echo "=== CODE COVERAGE SUMMARY ==="
-          cat target/site/jacoco/index.html | grep -oE "Total[^%]*%" || echo "Check the uploaded artifact for full report."
-
-      # Saves the full HTML report so you can download it from GitHub
-      - name: Upload Coverage Report Artifact
-        uses: actions/upload-artifact@v4
+      # Generates the coverage badge SVG file from the JaCoCo CSV
+      - name: Generate JaCoCo Badge
+        id: jacoco
+        uses: cicirello/jacoco-badge-generator@v2
         with:
-          name: jacoco-coverage-report
-          path: target/site/jacoco/
+          jacoco-csv-file: target/site/jacoco/jacoco.csv
+          badges-directory: .github/badges
+          generate-branches-badge: false
+
+      # Automatically commits and pushes the badge file if it changed
+      - name: Commit and Push Badge
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .github/badges/jacoco.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update coverage badge" && git push)
