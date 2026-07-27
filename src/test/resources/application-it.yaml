@@ -1,0 +1,18 @@
+prime:
+  finder:
+    algorithm: eratosthenes
+    max-limit: 10000
+
+  cache:
+    bucket-size: 2000
+    maximum-entries: 5
+    expire-after-access-minutes: 30
+
+  rate-limit:
+    enabled: true
+    #This allows a burst of 20 requests and replenishes 10 tokens per minute.
+    capacity: 20
+    refill-tokens: 10
+    refill-period: 1m
+    cache-maximum-entries: 10000
+    cache-expire-after-access: 30m

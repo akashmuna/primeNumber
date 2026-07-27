@@ -1,0 +1,137 @@
+openapi: 3.0.3
+
+info:
+  title: Prime Number API
+  version: 1.0.0
+  description: Finds all the prime numbers Upto the provided number
+
+servers:
+  - url: http://localhost:8080
+
+tags:
+  - name: PrimeNumber
+    description: Prime-number fetching operations
+
+paths:
+  /primes/{number}:
+    get:
+      tags:
+        - PrimeNumber
+      summary: Find All the Prime Numbers within the given Number
+      operationId: fetchPrime
+
+      parameters:
+        - name: number
+          in: path
+          required: true
+          description: Integer to check
+          schema:
+            type: integer
+            format: int64
+            minimum: 2
+            maximum: 10000000
+
+      responses:
+        "200":
+          description: Prime-numbers upto the number provided
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PrimeNumberResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/PrimeNumberResponse"
+
+        "400":
+          description: Invalid number
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+        "406":
+          description: Only application/json and application/xml are supported
+
+        "429":
+          description: Rate limit exceeded
+          headers:
+            Retry-After:
+              description: Seconds until another request may be attempted
+              schema:
+                type: integer
+                format: int64
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+        "500":
+          description: Unexpected server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+components:
+  schemas:
+    PrimeNumberResponse:
+      type: object
+      required:
+        - initial
+        - primes
+      properties:
+        initial:
+          type: integer
+          format: int64
+        primes:
+          type: array
+          items:
+            type: integer
+            format: int64
+      xml:
+        name: PrimeNumberResponse
+
+    ErrorResponse:
+      type: object
+      description: Standard API error response
+      required:
+        - timestamp
+        - status
+        - message
+        - path
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+          description: Time at which the error occurred, in UTC
+          example: "2026-07-23T14:32:45.123Z"
+        status:
+          type: integer
+          format: int32
+          description: HTTP status code
+          minimum: 100
+          maximum: 599
+          example: 400
+        message:
+          type: string
+          description: Human-readable error message
+          example: "Invalid value 'abc' for parameter 'number'; expected Long"
+        path:
+          type: string
+          description: Request path that caused the error
+          example: "/prime/abc"
+        traceId:
+          type: string
+          description: Optional request tracing identifier
+          example: "79bc9f12a37e4c41"
+      xml:
+        name: ErrorResponse

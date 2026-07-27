@@ -1,0 +1,397 @@
+2026-07-27 16:50:55.056 [main] [traceId=NO_TRACE] ERROR c.o.p.e.GlobalExceptionHandler - Unexpected error while processing request
+java.lang.RuntimeException: Unexpected failure
+	at com.org.prime.exception.GlobalExceptionHandlerTest.shouldHandleUnexpectedException(GlobalExceptionHandlerTest.java:199)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:502)
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:57)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:56)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:125)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithCancellationToken(LauncherAdapter.java:68)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:54)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-07-27 16:50:58.197 [main] [traceId=NO_TRACE] ERROR c.o.p.e.GlobalExceptionHandler - Spring MVC request processing failed
+java.lang.RuntimeException: Internal Server Exception
+	at com.org.prime.exception.GlobalExceptionHandlerTest.shouldHandleInternalServerError(GlobalExceptionHandlerTest.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:502)
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:57)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:56)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:125)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithCancellationToken(LauncherAdapter.java:68)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:54)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-07-27 16:50:59.683 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=49
+2026-07-27 16:50:59.738 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=49, durationMs=54
+2026-07-27 16:50:59.790 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - AtkinPrimeFinder range calculation started: from=2, to=30
+2026-07-27 16:50:59.801 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=5
+2026-07-27 16:50:59.803 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=5, durationMs=1
+2026-07-27 16:50:59.803 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - AtkinPrimeFinder range calculation finished: from=2, to=30, durationMs=13
+2026-07-27 16:50:59.814 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=100
+2026-07-27 16:50:59.815 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=100, durationMs=1
+2026-07-27 16:50:59.826 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=2
+2026-07-27 16:50:59.827 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=2, durationMs=1
+2026-07-27 16:50:59.844 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=101
+2026-07-27 16:50:59.846 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=101, durationMs=2
+2026-07-27 16:50:59.859 [main] [traceId=NO_TRACE] INFO  c.o.p.h.AtkinPrimeFinderTest$$Lambda/0x0000014e813bb0f0 - AtkinPrimeFinderTest$$Lambda/0x0000014e813bb0f0 range calculation started: from=11, to=30
+2026-07-27 16:50:59.866 [main] [traceId=NO_TRACE] INFO  c.o.p.h.AtkinPrimeFinderTest$$Lambda/0x0000014e813bb0f0 - AtkinPrimeFinderTest$$Lambda/0x0000014e813bb0f0 range calculation finished: from=11, to=30, durationMs=7
+2026-07-27 16:50:59.875 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=1
+2026-07-27 16:50:59.876 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=1, durationMs=0
+2026-07-27 16:50:59.903 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation started: number=100
+2026-07-27 16:50:59.905 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - Atkin calculation finished: number=100, durationMs=2
+2026-07-27 16:50:59.905 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - AtkinPrimeFinder range calculation started: from=101, to=130
+2026-07-27 16:50:59.907 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - AtkinPrimeFinder range calculation finished: from=101, to=130, durationMs=0
+2026-07-27 16:50:59.919 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - AtkinPrimeFinder range calculation started: from=50, to=30
+2026-07-27 16:50:59.921 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.impl.AtkinPrimeFinder - AtkinPrimeFinder range calculation finished: from=50, to=30, durationMs=0
+2026-07-27 16:50:59.959 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation started: from=2, to=30
+2026-07-27 16:50:59.960 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=5
+2026-07-27 16:50:59.962 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=5, primeCount=3
+2026-07-27 16:50:59.963 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=5, durationMs=2
+2026-07-27 16:50:59.963 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation finished: from=2, to=30, durationMs=4
+2026-07-27 16:50:59.975 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=2
+2026-07-27 16:50:59.977 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=2, primeCount=1
+2026-07-27 16:50:59.977 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=2, durationMs=1
+2026-07-27 16:50:59.992 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=101
+2026-07-27 16:50:59.994 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=101, durationMs=2
+2026-07-27 16:51:00.010 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=1
+2026-07-27 16:51:00.011 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=1, durationMs=1
+2026-07-27 16:51:00.034 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=30
+2026-07-27 16:51:00.036 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=30, primeCount=10
+2026-07-27 16:51:00.038 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=30, durationMs=3
+2026-07-27 16:51:00.075 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=49
+2026-07-27 16:51:00.078 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=49, primeCount=15
+2026-07-27 16:51:00.079 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=49, durationMs=3
+2026-07-27 16:51:00.100 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=30
+2026-07-27 16:51:00.103 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=30, primeCount=10
+2026-07-27 16:51:00.105 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=30, durationMs=4
+2026-07-27 16:51:00.106 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation started: from=31, to=50
+2026-07-27 16:51:00.108 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation finished: from=31, to=50, durationMs=1
+2026-07-27 16:51:00.130 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation started: from=50, to=30
+2026-07-27 16:51:00.131 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation finished: from=50, to=30, durationMs=0
+2026-07-27 16:51:01.137 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.PrimeServiceApplicationTests]: PrimeServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:02.037 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.PrimeServiceApplicationTests
+2026-07-27 16:51:02.791 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.PrimeServiceApplicationTests]: PrimeServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:02.795 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.PrimeServiceApplicationTests
+2026-07-27 16:51:05.092 [main] [traceId=NO_TRACE] INFO  c.o.p.PrimeServiceApplicationTests - Starting PrimeServiceApplicationTests using Java 21.0.8 with PID 32404 (started by ipsit in C:\dev\workspace\primeNumber)
+2026-07-27 16:51:05.103 [main] [traceId=NO_TRACE] INFO  c.o.p.PrimeServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-27 16:51:07.923 [background-preinit] [traceId=NO_TRACE] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-07-27 16:51:14.920 [main] [traceId=NO_TRACE] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-27 16:51:15.168 [main] [traceId=NO_TRACE] INFO  c.o.p.PrimeServiceApplicationTests - Started PrimeServiceApplicationTests in 12.051 seconds (process running for 26.747)
+2026-07-27 16:51:15.491 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=2000
+2026-07-27 16:51:15.492 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=2000, primeCount=303
+2026-07-27 16:51:15.492 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=2000, durationMs=1
+2026-07-27 16:51:15.494 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Updating Caffeine prime cache: key=eratosthenes, previousLimit=1, newLimit=2000, previousPrimeCount=0, newPrimeCount=303
+2026-07-27 16:51:15.523 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=2000, cachedLimit=2000, primeCount=303
+2026-07-27 16:51:15.526 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=2000, cachedLimit=2000, primeCount=303
+2026-07-27 16:51:26.787 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.cache.PrimeBucketCacheIT]: PrimeBucketCacheIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:27.594 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.cache.PrimeBucketCacheIT
+2026-07-27 16:51:28.285 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.cache.PrimeBucketCacheIT]: PrimeBucketCacheIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:28.296 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.cache.PrimeBucketCacheIT
+2026-07-27 16:51:29.999 [main] [traceId=NO_TRACE] INFO  c.org.prime.cache.PrimeBucketCacheIT - Starting PrimeBucketCacheIT using Java 21.0.8 with PID 34656 (started by ipsit in C:\dev\workspace\primeNumber)
+2026-07-27 16:51:30.005 [main] [traceId=NO_TRACE] INFO  c.org.prime.cache.PrimeBucketCacheIT - The following 1 profile is active: "it"
+2026-07-27 16:51:31.545 [background-preinit] [traceId=NO_TRACE] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-07-27 16:51:39.176 [main] [traceId=NO_TRACE] INFO  c.org.prime.cache.PrimeBucketCacheIT - Started PrimeBucketCacheIT in 10.437 seconds (process running for 19.62)
+2026-07-27 16:51:39.463 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=2000
+2026-07-27 16:51:39.464 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=2000, primeCount=303
+2026-07-27 16:51:39.465 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=2000, durationMs=2
+2026-07-27 16:51:39.473 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Updating Caffeine prime cache: key=eratosthenes, previousLimit=1, newLimit=2000, previousPrimeCount=0, newPrimeCount=303
+2026-07-27 16:51:39.592 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=1000, cachedLimit=2000, primeCount=303
+2026-07-27 16:51:39.615 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation started: from=2001, to=6000
+2026-07-27 16:51:39.628 [main] [traceId=NO_TRACE] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - EratosthenesPrimeFinder range calculation finished: from=2001, to=6000, durationMs=13
+2026-07-27 16:51:39.629 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Updating Caffeine prime cache: key=eratosthenes, previousLimit=2000, newLimit=6000, previousPrimeCount=303, newPrimeCount=783
+2026-07-27 16:51:39.727 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=4500, cachedLimit=6000, primeCount=783
+2026-07-27 16:51:39.730 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=51, cachedLimit=6000, primeCount=783
+2026-07-27 16:51:39.733 [main] [traceId=NO_TRACE] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=6000, cachedLimit=6000, primeCount=783
+2026-07-27 16:51:39.990 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.controller.ObControllerIT]: ObControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:40.155 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.controller.ObControllerIT
+2026-07-27 16:51:40.168 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.controller.ObControllerIT]: ObControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:40.174 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.controller.ObControllerIT
+2026-07-27 16:51:40.526 [main] [traceId=NO_TRACE] INFO  c.o.prime.controller.ObControllerIT - Starting ObControllerIT using Java 21.0.8 with PID 34656 (started by ipsit in C:\dev\workspace\primeNumber)
+2026-07-27 16:51:40.528 [main] [traceId=NO_TRACE] INFO  c.o.prime.controller.ObControllerIT - No active profile set, falling back to 1 default profile: "default"
+2026-07-27 16:51:44.955 [main] [traceId=NO_TRACE] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-27 16:51:44.956 [main] [traceId=NO_TRACE] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-27 16:51:45.025 [main] [traceId=NO_TRACE] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-27 16:51:45.120 [main] [traceId=NO_TRACE] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 163 ms
+2026-07-27 16:51:45.366 [main] [traceId=NO_TRACE] INFO  c.o.prime.controller.ObControllerIT - Started ObControllerIT in 5.062 seconds (process running for 25.81)
+2026-07-27 16:51:47.474 [main] [traceId=d354d7ed664848c2a82e6ab7908f7f21] INFO  c.o.p.c.PrimeSearchController - GET /primes/11 is started
+2026-07-27 16:51:47.475 [main] [traceId=d354d7ed664848c2a82e6ab7908f7f21] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=2000
+2026-07-27 16:51:47.476 [main] [traceId=d354d7ed664848c2a82e6ab7908f7f21] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=2000, primeCount=303
+2026-07-27 16:51:47.476 [main] [traceId=d354d7ed664848c2a82e6ab7908f7f21] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=2000, durationMs=0
+2026-07-27 16:51:47.476 [main] [traceId=d354d7ed664848c2a82e6ab7908f7f21] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Updating Caffeine prime cache: key=eratosthenes, previousLimit=1, newLimit=2000, previousPrimeCount=0, newPrimeCount=303
+2026-07-27 16:51:47.478 [main] [traceId=d354d7ed664848c2a82e6ab7908f7f21] INFO  c.o.p.c.PrimeSearchController - GET /primes/11 is completed
+2026-07-27 16:51:48.080 [main] [traceId=afe1acdc9f044375b8ab182f17c4ae1f] INFO  c.o.p.c.PrimeSearchController - GET /primes/11 is started
+2026-07-27 16:51:48.081 [main] [traceId=afe1acdc9f044375b8ab182f17c4ae1f] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=11, cachedLimit=2000, primeCount=303
+2026-07-27 16:51:48.081 [main] [traceId=afe1acdc9f044375b8ab182f17c4ae1f] INFO  c.o.p.c.PrimeSearchController - GET /primes/11 is completed
+2026-07-27 16:51:48.256 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.ratelimit.RateLimitIT]: RateLimitIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:48.304 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.ratelimit.RateLimitIT
+2026-07-27 16:51:48.307 [main] [traceId=NO_TRACE] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.org.prime.ratelimit.RateLimitIT]: RateLimitIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-27 16:51:48.312 [main] [traceId=NO_TRACE] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.org.prime.PrimeServiceApplication for test class com.org.prime.ratelimit.RateLimitIT
+2026-07-27 16:51:48.433 [main] [traceId=NO_TRACE] INFO  com.org.prime.ratelimit.RateLimitIT - Starting RateLimitIT using Java 21.0.8 with PID 34656 (started by ipsit in C:\dev\workspace\primeNumber)
+2026-07-27 16:51:48.443 [main] [traceId=NO_TRACE] INFO  com.org.prime.ratelimit.RateLimitIT - The following 1 profile is active: "it"
+2026-07-27 16:51:49.678 [main] [traceId=NO_TRACE] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-27 16:51:49.679 [main] [traceId=NO_TRACE] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-27 16:51:49.687 [main] [traceId=NO_TRACE] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-27 16:51:49.699 [main] [traceId=NO_TRACE] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 20 ms
+2026-07-27 16:51:49.718 [main] [traceId=NO_TRACE] INFO  com.org.prime.ratelimit.RateLimitIT - Started RateLimitIT in 1.395 seconds (process running for 30.161)
+2026-07-27 16:51:49.747 [main] [traceId=f7a061197e044361923242d74baedfb0] INFO  c.o.p.c.PrimeSearchController - GET /primes/11 is started
+2026-07-27 16:51:49.748 [main] [traceId=f7a061197e044361923242d74baedfb0] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=2000
+2026-07-27 16:51:49.748 [main] [traceId=f7a061197e044361923242d74baedfb0] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=2000, primeCount=303
+2026-07-27 16:51:49.748 [main] [traceId=f7a061197e044361923242d74baedfb0] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=2000, durationMs=1
+2026-07-27 16:51:49.748 [main] [traceId=f7a061197e044361923242d74baedfb0] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Updating Caffeine prime cache: key=eratosthenes, previousLimit=1, newLimit=2000, previousPrimeCount=0, newPrimeCount=303
+2026-07-27 16:51:49.750 [main] [traceId=f7a061197e044361923242d74baedfb0] INFO  c.o.p.c.PrimeSearchController - GET /primes/11 is completed
+2026-07-27 16:51:49.759 [main] [traceId=f982a49a185a4609aca37d08b7690775] INFO  c.o.p.c.PrimeSearchController - GET /primes/13 is started
+2026-07-27 16:51:49.760 [main] [traceId=f982a49a185a4609aca37d08b7690775] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=13, cachedLimit=2000, primeCount=303
+2026-07-27 16:51:49.760 [main] [traceId=f982a49a185a4609aca37d08b7690775] INFO  c.o.p.c.PrimeSearchController - GET /primes/13 is completed
+2026-07-27 16:51:49.763 [main] [traceId=ff7febbbef6f4449afdf2f6579c0304f] INFO  c.o.p.h.i.RateLimitInterceptor - Rate limit exceeded: scope=prime-search, identityType=AUTHENTICATED, retryAfterSeconds=3600
+2026-07-27 16:51:49.777 [main] [traceId=7fb86747f64f4f91aa668325461ac7c8] INFO  c.o.p.c.PrimeSearchController - GET /primes/17 is started
+2026-07-27 16:51:49.777 [main] [traceId=7fb86747f64f4f91aa668325461ac7c8] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=17, cachedLimit=2000, primeCount=303
+2026-07-27 16:51:49.778 [main] [traceId=7fb86747f64f4f91aa668325461ac7c8] INFO  c.o.p.c.PrimeSearchController - GET /primes/17 is completed
+2026-07-27 16:52:13.980 [main] [traceId=NO_TRACE] INFO  c.org.prime.PrimeServiceApplication - Starting PrimeServiceApplication using Java 21.0.8 with PID 33708 (C:\dev\workspace\primeNumber\target\classes started by ipsit in C:\dev\workspace\primeNumber)
+2026-07-27 16:52:13.987 [main] [traceId=NO_TRACE] INFO  c.org.prime.PrimeServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-27 16:52:14.553 [background-preinit] [traceId=NO_TRACE] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.0.Final
+2026-07-27 16:52:16.244 [main] [traceId=NO_TRACE] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-27 16:52:16.264 [main] [traceId=NO_TRACE] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-27 16:52:16.268 [main] [traceId=NO_TRACE] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-27 16:52:16.268 [main] [traceId=NO_TRACE] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-27 16:52:16.364 [main] [traceId=NO_TRACE] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2281 ms
+2026-07-27 16:52:18.456 [main] [traceId=NO_TRACE] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-27 16:52:18.531 [main] [traceId=NO_TRACE] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-27 16:52:18.556 [main] [traceId=NO_TRACE] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-27 16:52:18.566 [main] [traceId=NO_TRACE] INFO  c.org.prime.PrimeServiceApplication - Started PrimeServiceApplication in 5.825 seconds (process running for 8.245)
+2026-07-27 16:52:19.090 [RMI TCP Connection(4)-192.168.0.102] [traceId=NO_TRACE] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-27 16:52:19.091 [RMI TCP Connection(4)-192.168.0.102] [traceId=NO_TRACE] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-27 16:52:19.094 [RMI TCP Connection(4)-192.168.0.102] [traceId=NO_TRACE] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-27 16:52:42.834 [http-nio-8080-exec-1] [traceId=eece91d28a554ada83d076e0351bba89] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:52:42.836 [http-nio-8080-exec-1] [traceId=eece91d28a554ada83d076e0351bba89] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation started: number=2000
+2026-07-27 16:52:42.837 [http-nio-8080-exec-1] [traceId=eece91d28a554ada83d076e0351bba89] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation completed: limit=2000, primeCount=303
+2026-07-27 16:52:42.837 [http-nio-8080-exec-1] [traceId=eece91d28a554ada83d076e0351bba89] INFO  c.o.p.h.p.i.EratosthenesPrimeFinder - Eratosthenes calculation finished: number=2000, durationMs=1
+2026-07-27 16:52:42.837 [http-nio-8080-exec-1] [traceId=eece91d28a554ada83d076e0351bba89] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Updating Caffeine prime cache: key=eratosthenes, previousLimit=1, newLimit=2000, previousPrimeCount=0, newPrimeCount=303
+2026-07-27 16:52:42.843 [http-nio-8080-exec-1] [traceId=eece91d28a554ada83d076e0351bba89] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:52:54.785 [http-nio-8080-exec-2] [traceId=95d42390d4be426dac89877bac7c363b] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:52:54.787 [http-nio-8080-exec-2] [traceId=95d42390d4be426dac89877bac7c363b] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:52:54.788 [http-nio-8080-exec-2] [traceId=95d42390d4be426dac89877bac7c363b] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:52:58.058 [http-nio-8080-exec-4] [traceId=c74478be658f4d809f61c8614e668013] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:52:58.058 [http-nio-8080-exec-4] [traceId=c74478be658f4d809f61c8614e668013] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:52:58.060 [http-nio-8080-exec-4] [traceId=c74478be658f4d809f61c8614e668013] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:00.418 [http-nio-8080-exec-5] [traceId=3f4df40cf57c4bcf823f3e459a929421] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:00.419 [http-nio-8080-exec-5] [traceId=3f4df40cf57c4bcf823f3e459a929421] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:00.421 [http-nio-8080-exec-5] [traceId=3f4df40cf57c4bcf823f3e459a929421] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:02.017 [http-nio-8080-exec-6] [traceId=97fd2e7d2876477fa6401eeb924e569f] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:02.018 [http-nio-8080-exec-6] [traceId=97fd2e7d2876477fa6401eeb924e569f] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:02.019 [http-nio-8080-exec-6] [traceId=97fd2e7d2876477fa6401eeb924e569f] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:03.016 [http-nio-8080-exec-7] [traceId=bee48b1fadb845848c9215ae938e0e98] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:03.016 [http-nio-8080-exec-7] [traceId=bee48b1fadb845848c9215ae938e0e98] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:03.017 [http-nio-8080-exec-7] [traceId=bee48b1fadb845848c9215ae938e0e98] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:04.623 [http-nio-8080-exec-8] [traceId=5f6f7189a8ff4c40ba03eed667a865e6] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:04.623 [http-nio-8080-exec-8] [traceId=5f6f7189a8ff4c40ba03eed667a865e6] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:04.624 [http-nio-8080-exec-8] [traceId=5f6f7189a8ff4c40ba03eed667a865e6] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:05.510 [http-nio-8080-exec-9] [traceId=ced3c72609cc4facb8277adb898327d6] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:05.511 [http-nio-8080-exec-9] [traceId=ced3c72609cc4facb8277adb898327d6] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:05.511 [http-nio-8080-exec-9] [traceId=ced3c72609cc4facb8277adb898327d6] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:06.830 [http-nio-8080-exec-10] [traceId=8fdcb977308446999414d2d5d49a04bd] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:06.830 [http-nio-8080-exec-10] [traceId=8fdcb977308446999414d2d5d49a04bd] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:06.831 [http-nio-8080-exec-10] [traceId=8fdcb977308446999414d2d5d49a04bd] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:08.191 [http-nio-8080-exec-1] [traceId=2f596f7670d04faf97815aa1c7e16a11] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:08.191 [http-nio-8080-exec-1] [traceId=2f596f7670d04faf97815aa1c7e16a11] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:08.192 [http-nio-8080-exec-1] [traceId=2f596f7670d04faf97815aa1c7e16a11] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:09.426 [http-nio-8080-exec-3] [traceId=3cfbfef878ce40c497c58c40f56c91f5] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:09.426 [http-nio-8080-exec-3] [traceId=3cfbfef878ce40c497c58c40f56c91f5] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:09.426 [http-nio-8080-exec-3] [traceId=3cfbfef878ce40c497c58c40f56c91f5] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:12.795 [http-nio-8080-exec-2] [traceId=02b558534ccc4ce5aa185e6b8dc53d9e] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:12.798 [http-nio-8080-exec-2] [traceId=02b558534ccc4ce5aa185e6b8dc53d9e] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:12.799 [http-nio-8080-exec-2] [traceId=02b558534ccc4ce5aa185e6b8dc53d9e] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:19.594 [http-nio-8080-exec-5] [traceId=a1a656c3440e45048656136465124264] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:19.594 [http-nio-8080-exec-5] [traceId=a1a656c3440e45048656136465124264] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:19.594 [http-nio-8080-exec-5] [traceId=a1a656c3440e45048656136465124264] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:29.516 [http-nio-8080-exec-7] [traceId=6d6af6f2d2404955b3d56af7faecfe21] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:29.517 [http-nio-8080-exec-7] [traceId=6d6af6f2d2404955b3d56af7faecfe21] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:29.517 [http-nio-8080-exec-7] [traceId=6d6af6f2d2404955b3d56af7faecfe21] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:29.898 [http-nio-8080-exec-9] [traceId=e047169d081744e082381dff3c6db767] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:29.899 [http-nio-8080-exec-9] [traceId=e047169d081744e082381dff3c6db767] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:29.901 [http-nio-8080-exec-9] [traceId=e047169d081744e082381dff3c6db767] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:30.163 [http-nio-8080-exec-1] [traceId=03ce3a32128c401487ea40b7e5dd6635] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:30.164 [http-nio-8080-exec-1] [traceId=03ce3a32128c401487ea40b7e5dd6635] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:30.165 [http-nio-8080-exec-1] [traceId=03ce3a32128c401487ea40b7e5dd6635] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:30.443 [http-nio-8080-exec-2] [traceId=a888e2fcbc614e54b6edac2227f99fbd] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:30.444 [http-nio-8080-exec-2] [traceId=a888e2fcbc614e54b6edac2227f99fbd] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:30.444 [http-nio-8080-exec-2] [traceId=a888e2fcbc614e54b6edac2227f99fbd] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:30.762 [http-nio-8080-exec-5] [traceId=59f368ab78084c0f86b23951ea5ee077] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:30.762 [http-nio-8080-exec-5] [traceId=59f368ab78084c0f86b23951ea5ee077] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:30.762 [http-nio-8080-exec-5] [traceId=59f368ab78084c0f86b23951ea5ee077] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:31.009 [http-nio-8080-exec-7] [traceId=2c583e26115f48f584d03fca1d311654] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:31.011 [http-nio-8080-exec-7] [traceId=2c583e26115f48f584d03fca1d311654] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:31.011 [http-nio-8080-exec-7] [traceId=2c583e26115f48f584d03fca1d311654] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:31.210 [http-nio-8080-exec-9] [traceId=f6f27cc0d95c4333bbb483fd8be6dc69] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:31.210 [http-nio-8080-exec-9] [traceId=f6f27cc0d95c4333bbb483fd8be6dc69] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:31.211 [http-nio-8080-exec-9] [traceId=f6f27cc0d95c4333bbb483fd8be6dc69] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:31.454 [http-nio-8080-exec-1] [traceId=92f7ecbbc54b436c9cf0bd870145ec28] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:31.454 [http-nio-8080-exec-1] [traceId=92f7ecbbc54b436c9cf0bd870145ec28] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:31.455 [http-nio-8080-exec-1] [traceId=92f7ecbbc54b436c9cf0bd870145ec28] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:31.660 [http-nio-8080-exec-2] [traceId=bd28ad5d9c5b43dcb9941d28eb992bb4] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:31.661 [http-nio-8080-exec-2] [traceId=bd28ad5d9c5b43dcb9941d28eb992bb4] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:31.661 [http-nio-8080-exec-2] [traceId=bd28ad5d9c5b43dcb9941d28eb992bb4] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:32.307 [http-nio-8080-exec-5] [traceId=e545003788b84d6f8fb2632d57701560] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:32.308 [http-nio-8080-exec-5] [traceId=e545003788b84d6f8fb2632d57701560] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:32.310 [http-nio-8080-exec-5] [traceId=e545003788b84d6f8fb2632d57701560] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:32.868 [http-nio-8080-exec-7] [traceId=b08840316811425daf2d0fd4263d688b] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:32.869 [http-nio-8080-exec-7] [traceId=b08840316811425daf2d0fd4263d688b] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:32.869 [http-nio-8080-exec-7] [traceId=b08840316811425daf2d0fd4263d688b] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:33.349 [http-nio-8080-exec-9] [traceId=bc8b1f27904e4e20a843b8d97544bbce] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:33.349 [http-nio-8080-exec-9] [traceId=bc8b1f27904e4e20a843b8d97544bbce] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:33.351 [http-nio-8080-exec-9] [traceId=bc8b1f27904e4e20a843b8d97544bbce] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:33.861 [http-nio-8080-exec-1] [traceId=4ad12bd057dc473d9a53ebcfc562c4e4] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:33.862 [http-nio-8080-exec-1] [traceId=4ad12bd057dc473d9a53ebcfc562c4e4] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:33.862 [http-nio-8080-exec-1] [traceId=4ad12bd057dc473d9a53ebcfc562c4e4] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:34.481 [http-nio-8080-exec-2] [traceId=b37f246ab5c94df5877c77feb4748ba6] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is started
+2026-07-27 16:53:34.481 [http-nio-8080-exec-2] [traceId=b37f246ab5c94df5877c77feb4748ba6] INFO  c.o.p.h.c.impl.PrimeBucketCacheImpl - Prime cache hit: key=eratosthenes, requestedLimit=15, cachedLimit=2000, primeCount=303
+2026-07-27 16:53:34.482 [http-nio-8080-exec-2] [traceId=b37f246ab5c94df5877c77feb4748ba6] INFO  c.o.p.c.PrimeSearchController - GET /primes/15 is completed
+2026-07-27 16:53:34.890 [http-nio-8080-exec-5] [traceId=ca3246a05ff94952b8595ce48f54a07c] INFO  c.o.p.h.i.RateLimitInterceptor - Rate limit exceeded: scope=prime-search, identityType=ANONYMOUS, retryAfterSeconds=2
+2026-07-27 16:53:35.206 [http-nio-8080-exec-7] [traceId=5b4427ae86a34952a5289ef5514b4bdb] INFO  c.o.p.h.i.RateLimitInterceptor - Rate limit exceeded: scope=prime-search, identityType=ANONYMOUS, retryAfterSeconds=2
+2026-07-27 16:53:35.549 [http-nio-8080-exec-9] [traceId=7185d2b34142416286cc848384d84e5b] INFO  c.o.p.h.i.RateLimitInterceptor - Rate limit exceeded: scope=prime-search, identityType=ANONYMOUS, retryAfterSeconds=2
+2026-07-27 16:53:53.936 [SpringApplicationShutdownHook] [traceId=NO_TRACE] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-27 16:53:53.958 [tomcat-shutdown] [traceId=NO_TRACE] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete

@@ -1,0 +1,35 @@
+name: Java Maven CI with Coverage
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      # Runs tests and triggers JaCoCo report generation
+      - name: Build and Test with Maven
+        run: mvn clean test
+
+      # Optional: Prints a quick coverage summary text to the GitHub logs
+      - name: Log Coverage Summary
+        run: |
+          echo "=== CODE COVERAGE SUMMARY ==="
+          cat target/site/jacoco/index.html | grep -oE "Total[^%]*%" || echo "Check the uploaded artifact for full report."
+
+      # Saves the full HTML report so you can download it from GitHub
+      - name: Upload Coverage Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-coverage-report
+          path: target/site/jacoco/
