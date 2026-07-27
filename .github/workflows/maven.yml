@@ -17,9 +17,9 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      # Runs tests and triggers JaCoCo report generation
+      # Runs Unit Tests, Integration Tests, and generates code coverage
       - name: Build and Test with Maven
-        run: mvn clean test
+        run: mvn clean verify
 
       # Optional: Prints a quick coverage summary text to the GitHub logs
       - name: Log Coverage Summary
