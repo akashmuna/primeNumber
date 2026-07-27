@@ -1,5 +1,7 @@
 # Prime Number Service
 
+![Extension Coverage](.github/badges/jacoco.svg)
+
 A Java 21 and Spring Boot 4 REST service that returns every prime number up to
 an inclusive upper limit. The application is API-first, supports JSON and XML,
 uses selectable prime-finding strategies, extends cached results incrementally,
