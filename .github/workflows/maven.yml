@@ -5,6 +5,8 @@ on: [push]
 # Grant permission to let the workflow commit the badge back to your repo
 permissions:
   contents: write
+  pages: write      # Required to deploy to GitHub Pages
+  id-token: write   # Required to deploy to GitHub Pages
 
 jobs:
   build:
@@ -41,3 +43,14 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .github/badges/jacoco.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update coverage badge" && git push)
+
+      # Upload the HTML report to GitHub Pages hosting
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: target/site/jacoco/
+
+      # Publish the report live to the web
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
