@@ -1,6 +1,6 @@
 prime:
   finder:
-    algorithm: eratosthenes
+    algorithm: atkin
     max-limit: 10000
 
     primeFinderCacheConfig:
